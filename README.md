@@ -1,2 +1,2 @@
-# coachella2017
+# Coachella2017
 some music thing
