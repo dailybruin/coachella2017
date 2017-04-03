@@ -32,22 +32,34 @@ z-index: -100;
     right: 0;
     bottom: 0;
     left: 0;
-    overflow: hidden;
+    overflow: auto;
     padding-top: 30px;
 }
 #logo {
     font-family: 'Old Standard TT', serif;
-    font-size: 7vh;
+    font-size: 4vh;
     color: white;
-    font-style: italic;
     text-align: center;
+}
+#buttons {
+    padding-top: 160px;
+
+}
+a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.btnnames {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }
 @media (max-width: 767px) {
     .fullscreen-bg {
-        background: url('http://dev2.slicejack.com/fullscreen-video-demo/img/videoframe.jpg') center center / cover no-repeat;
+        background: url('images/coachellasmall.jpg') center center / cover no-repeat;
     }
-
-    .fullscreen-bg__video {
+.fullscreen-bg__video {
         display: none;
     }
 }
