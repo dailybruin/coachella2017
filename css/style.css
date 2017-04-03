@@ -6,6 +6,7 @@
     left: 0;
     overflow: hidden;
     z-index: -100;
+    background: url('images/coachellasmall.jpg') center center / cover no-repeat;
 }
 
 .fullscreen-bg__video {
@@ -59,7 +60,7 @@ a {
     .fullscreen-bg {
         background: url('images/coachellasmall.jpg') center center / cover no-repeat;
     }
-.fullscreen-bg__video {
-        display: none;
+    #buttons {
+        padding-top: 50px;
     }
 }
