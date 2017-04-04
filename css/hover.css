@@ -18,8 +18,8 @@
   -webkit-transform: perspective(.5px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.9s;
-  transition-duration: 0.9s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
   -webkit-transition-property: transform;
   transition-property: transform;
 }
