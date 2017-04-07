@@ -1,3 +1,96 @@
-    .parallax-container {
-      height: "your height here";
+.parallax-container {
+  height: "your height here";
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+  overflow: hidden;
+}
+
+/* CONTENT CSS */
+.content-main {
+    overflow-y: auto;
+    padding-top: 7rem;
+    height: 100%;
+    /*background-color: gray;*/
+    background-image: url("../icon/background.jpg");
+    background-size: cover;
+    background-position: center 100%;
+}
+
+@media only screen and (max-width: 40em) { 
+    .content-main {
+        background-position: 90% 100%;
     }
+}  
+
+/* PHOTOESSAY CARDS */
+.photocard {
+    margin: auto;
+    height: auto;
+    max-width: 90vw;
+    width: 800px;
+    background-color: white;
+    margin-top: 3rem;
+}
+
+.card-top p {
+    padding: 1rem 1rem 0rem 1rem;
+    margin-bottom: 0px;
+    font-size: 1.4rem;
+    
+}
+
+p.timestamp {
+    font-weight: 300;
+    float: left;
+}
+
+p.cardartist {
+    float: right;
+    font-weight: 600;
+}
+
+p.cardcaption {
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+img.cardpic {
+    padding: 1rem 0rem 1rem 0rem;
+    max-height: 85vh;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* RECAP CSS*/
+.recap {
+    display: none;
+    margin: auto;
+    height: auto;
+    max-width: 90vw;
+    width: 800px;
+    background-color: white;
+    margin-top: 3rem;
+    padding-top: 1rem;
+}
+
+.recap p {
+    padding: 0rem 1rem 1rem 1rem;
+    margin: 0;
+}
+
+p.recap-caption {
+    text-align: right;
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+h2.recap-headline {
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
