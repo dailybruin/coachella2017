@@ -1,59 +1,47 @@
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
 .parallax-container {
-  height: "your height here";
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
 }
 
-body {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-  overflow: hidden;
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
 
-/* CONTENT CSS */
-.content-main {
-    overflow-y: auto;
-    padding-top: 7rem;
-    height: 100%;
-    /*background-color: gray;*/
-    background-image: url("../icon/background.jpg");
-    background-size: cover;
-    background-position: center 100%;
+.icon-block {
+  padding: 0 15px;
 }
-
-@media only screen and (max-width: 40em) { 
-    .content-main {
-        background-position: 90% 100%;
-    }
-}  
-
-/* PHOTOESSAY CARDS */
-.photocard {
-    margin: auto;
-    height: auto;
-    max-width: 90vw;
-    width: 800px;
-    background-color: white;
-    margin-top: 3rem;
-}
-
-.card-top p {
-    padding: 1rem 1rem 0rem 1rem;
-    margin-bottom: 0px;
-    font-size: 1.4rem;
-    
-}
-
-p.timestamp {
-    font-weight: 300;
-    float: left;
-}
-
-p.cardartist {
-    float: right;
-    font-weight: 600;
-}
-
-p.cardcaption {
-    padding: 0rem 1rem 1rem 1rem;
+.icon-block .material-icons {
+  font-size: inherit;
 }
 
 img.cardpic {
@@ -61,36 +49,4 @@ img.cardpic {
     max-height: 85vh;
     display: block;
     margin: 0 auto;
-}
-
-
-/* RECAP CSS*/
-.recap {
-    display: none;
-    margin: auto;
-    height: auto;
-    max-width: 90vw;
-    width: 800px;
-    background-color: white;
-    margin-top: 3rem;
-    padding-top: 1rem;
-}
-
-.recap p {
-    padding: 0rem 1rem 1rem 1rem;
-    margin: 0;
-}
-
-p.recap-caption {
-    text-align: right;
-    padding-bottom: 1.5rem;
-    font-weight: 400;
-}
-
-h2.recap-headline {
-    padding: 0rem 1rem 0rem 1rem;
-    font-size: 2rem;
-    text-align: left;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
 }

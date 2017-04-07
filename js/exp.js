@@ -1,8 +1,3 @@
-    $(document).ready(function(){
-      $('.parallax').parallax();
-    });
-
-
 var photosheetkey = "1wxIlU9pjKDcAfZrX4XmzAfCBA1cpWP1TrmoUGpvWa-c";
 var recapsheetkey = "1ffCXCveuwLrG7jL20bTsATxGIxSWDvjTloNQAn_3H-M";
 var photocard_template = $("#card-template").html();
@@ -30,7 +25,6 @@ function init() {
 		data = clean_google_sheet_json(data);
 		if (data.length > 0) {
 			$(".leftbyline").show();
-			// $(".recap").html(format_body_text(todaysrecap.text));
 			var todaysrecap = data[0];
 			var recaparray = format_body_text(todaysrecap.text);
 			var halfway = Math.floor(recaparray.length / 2) + 3;

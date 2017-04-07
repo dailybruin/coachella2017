@@ -13,13 +13,12 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.css">
  <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
-          
 	<link rel="stylesheet" href="css/exp.css">
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
 	
-</head>
-
-<body>
-	<!-- HANDLEBARS TEMPLATES -->
+  	<!-- HANDLEBARS TEMPLATES -->
 	<script id="card-template" type="text/x-handlebars-template">
 		{{#each carddata}}
 			<div class="photocard">
@@ -33,27 +32,40 @@
 			</div>
 		{{/each}}
 	</script>
+</head>
 
-	<!-- CONTENT WRAPPER -->
-	<div class="content-main">
-      <div class="parallax-container">
-    <div class="parallax"><img src="images/coachellasmall.jpg"></div>
+<body>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/coachellasmall.jpg" alt="header image"></div>
   </div>
-  <div class="section white">
-    <div class="row container">
-      <div class="recap"></div>
+  <div class="container content-main">
+
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+
     </div>
   </div>
-  <div class="parallax-container">
-    <div class="parallax"><img src="images/coachellasmall.jpg"></div>
-  </div>
-	</div>
 
+  <!--<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>-->
+
+  </body>
 	<!-- SCRIPTS -->
-	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 	<script src="js/exp.js"></script>
-</body>
 </html>
