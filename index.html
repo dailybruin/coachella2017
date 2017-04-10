@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -28,37 +29,23 @@
 </head>
 
 <body>
+    <a href="http://dailybruin.com"><image src="images/db.png" id="db-logo"></a>
     <div id="overlay">
-        <div id="logo">
-            <span><em>The Daily Bruin</em> covers</span>
-            <center><img src="images/coachella-logo.png" alt="Coachella logo" style="height: 13vh; padding-top: 30px;"></center>
+        <div id="header-text">
+            <strong><em>DAILY BRUIN @</em></strong>
         </div>
-        <div id="buttons">
-            <div class="hvr-grow col-xs-12 col-md-4" id="exp">
-                <a href="exp.html" target="_blank" class="btnnames">
-                <center><img src="images/exp.png" alt="Student Experiences Logo" style="height:25vh;"></center>
-                    <strong><h1>Student Experiences</h1></strong>
-                    </a>
-            </div>
-            <div class="hvr-grow col-xs-12 col-md-4" id="food">
-                <a href="#" target="_blank" class="btnnames">
-                <center><img src="images/food.png" alt="Food Logo" style="height:25vh;"></center>
-                    <strong><h1>Food of Coachella</h1></strong>
-                    </a>
-            </div>
-            <div class="hvr-grow col-xs-12 col-md-4" id="perform">
-                <a href="#" target="_blank" class="btnnames">
-                <center><img src="images/perform.png" alt="Performances Logo" style="height:25vh;"></center>
-                <strong><h1>Performances</h1></strong>
-                </a>
-            </div>
+        <img id="coachella-logo" src="images/coachella-logo.png">
+        <div id="buttons-container">
+            <a style="color:black" href="exp.html" target="_blank"><button class="nav-button" id="exp">STUDENT EXPERIENCES</button></a>
+            <button class="nav-button" id="food">FOOD @ COACHELLA</button>
+            <button class="nav-button" id="perform">PERFORMANCES</button>
         </div>
     </div>
-    <div class="fullscreen-bg">
+    <!--<div class="fullscreen-bg">
         <video loop muted autoplay poster="images/coachellasmall.jpg" class="fullscreen-bg__video">
             <source src="coachella.mp4" type="video/mp4">
         </video>
-    </div>
+    </div>-->
 
 </body>
 </html>
