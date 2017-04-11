@@ -1,40 +1,56 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Daily Bruin at Coachella 2016: Day 1</title>
+  <title>Daily Bruin at Coachella 2016: Day 1</title>
 
-	<!-- TODO: OG TAGS -->
+  <!-- TODO: OG TAGS -->
 
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.css">
- <!-- Compiled and minified CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:300|Lato:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.css">
+  <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
-	<link rel="stylesheet" href="css/exp.css">
- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-    <script src="js/init.js"></script>
-	
-  	<!-- HANDLEBARS TEMPLATES -->
-	<script id="card-template" type="text/x-handlebars-template">
-		{{#each carddata}}
-			<div class="photocard">
-				<div class="card-top">
-					<p class="timestamp">{{time}}</p>
-					<p class="cardartist">{{artist}}</p>
-					<div style="clear: both;"></div>
-				</div>
-				<img class="cardpic" src="{{photo-url}}"/>
-				{{{formatcaptiontext caption}}}
-			</div>
-		{{/each}}
-	</script>
+  <link rel="stylesheet" href="https://decorator.io/tools/modulr.min.css">
+  <link rel="stylesheet" href="css/exp.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
+  <script src="js/init.js"></script>
+
+  <!-- HANDLEBARS TEMPLATES -->
+  <script id="card-template" type="text/x-handlebars-template">
+    {{#each carddata}}
+    <div class="photocard">
+      <div class="card-top">
+        <p class="timestamp">{{time}}</p>
+        <p class="cardartist">{{artist}}</p>
+        <div style="clear: both;"></div>
+      </div>
+      <img class="cardpic" src="{{photo-url}}" /> {{{formatcaptiontext caption}}}
+    </div>
+    {{/each}}
+  </script>
 </head>
 
 <body>
+  <header class="nav-down">
+    <div class="navcontent">
+      <img src="images/dbsmall.png" alt="dblogo" class="icon">
+      <div class="centerednav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <img src="images/c.png" alt="coachella logo" class="c">
+    </div>
+  </header>
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -54,18 +70,9 @@
     </div>
   </div>
 
-  <!--<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>-->
+</body>
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+<script src="js/exp.js"></script>
 
-  </body>
-	<!-- SCRIPTS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
-	<script src="js/exp.js"></script>
 </html>

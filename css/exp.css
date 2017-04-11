@@ -1,12 +1,45 @@
-nav ul a,
-nav .brand-logo {
-  color: #444;
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(65,65,65);
 }
+
 
 p {
   line-height: 2rem;
 }
-
+.navcontent {
+  position: relative;
+  z-index: -10000;
+}
+.icon {
+  position: absolute;
+  height: 65px;
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-right: 10px;
+}
+.c {
+  position: absolute;
+  height: 65px;
+  right:  15px;
+  top: 0px;
+}
+.centerednav {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 1000px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+  display: inline;
+}
 .button-collapse {
   color: #26a69a;
 }
@@ -50,3 +83,17 @@ img.cardpic {
     display: block;
     margin: 0 auto;
 }
+
+header {
+    background: white;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+    top: -75px;
+}
+
