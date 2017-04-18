@@ -31,6 +31,23 @@
       <a href="food.html"><img class= "leftsmallwindowicon" src="images/food.png"/></a>
     </div>
   </header>
+
+  <!-- HANDLEBARS TEMPLATES -->
+	<script id="card-template" type="text/x-handlebars-template">
+		{{#each carddata}}
+			<div class="photocard">
+				<div class="card-top">
+					<p class="timestamp">{{time}}</p>
+					<p class="cardartist">{{artist}}</p>
+					<div style="clear: both;"></div>
+				</div>
+				<img class="cardpic" src="{{photo-url}}"/>
+				<!-- <p class="cardcaption">{{caption}}</p> -->
+				{{{formatcaptiontext caption}}}
+			</div>
+		{{/each}}
+	</script>
+  
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -79,6 +96,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="js/init.js"></script>
-<script src="js/exp.js"></script>
+<script src="js/nav.js"></script>
 
 </html>
