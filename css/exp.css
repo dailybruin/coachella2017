@@ -62,15 +62,11 @@ a:hover {
   color: #e57373;
 }
 .parallax-container {
-  height: 50vh;
-  width: 100vw;
+  height: 100vh;
   line-height: 0;
   color: rgba(255,255,255,.9);
   z-index: -10000;
 }
-  .parallax-container .section {
-    width: 100%;
-  }
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -143,14 +139,12 @@ header {
 }
 .headlines {
     font-family: 'Arial', sans-serif;
-    font-size: 500%;
+    font-size: 5vw;
     font-weight: bold;
     font-style: italic;
     text-shadow: 0.5vh 0px 0px rgba(255, 172, 237, 0.8);
   position: absolute;
-  /*top: 40vh;*/
-  bottom: 0;
-  padding-bottom: 45px;
+  bottom: 5vh;
   z-index: 10000;
 }
 /*cards*/
