@@ -184,7 +184,7 @@ header {
     width: 800px;
     background-color: white;
     margin-top: 3rem;
-}
+}*/
 
 .card-top p {
     padding: 1rem 1rem 0rem 1rem;
@@ -206,12 +206,12 @@ p.cardartist {
 p.cardcaption {
     padding: 0rem 1rem 1rem 1rem;
 }
-*/
+
 img.cardpic {
     text-align: center;
 
     height: auto;
-    max-width: 50%;
+    max-width: 70%;
     display: block;
     margin: 0 auto;
         box-shadow: 5px 5px 5px #888888;
