@@ -179,3 +179,6 @@ header {
 footer {
   padding-bottom: 5px;
 }
+footer a {
+  color: orange;
+}
