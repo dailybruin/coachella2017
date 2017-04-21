@@ -57,14 +57,14 @@
   <div class="container" id="article">
     <script id="template" type="text/x-handlebars-template">
       <div class="row">
-        <div class="col s12 l5">
+        <div class="col s12 l5 module-left">
           <h2>{{cellsArray.[0]}}</h2>
           <hr />
           <p class="blockquote">
             {{cellsArray.[2]}}
           </p>
         </div>
-        <div class="col s12 l6 offset-l1">
+        <div class="col s12 l6 offset-l1 module-right">
           <div class="card z-depth-5">
             <div class="card-image">
               <img src="{{cellsArray.[1]}}"/>
@@ -73,6 +73,10 @@
         </div>
       </div>
     </script>
+  </div>
+
+  <div class="module-left">
+    test
   </div>
 
 </body>
