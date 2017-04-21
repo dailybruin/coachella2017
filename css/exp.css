@@ -1,8 +1,6 @@
-
-
 body {
   font-family: 'Montserrat', sans-serif;
-  color:  black;
+  color: black;
 }
 
 .parallax-container {
@@ -30,21 +28,25 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
+
 p {
   line-height: 2rem;
 }
+
 .content {
   font-size: 50px;
   z-index: 100000;
 }
+
 .nav-content {
   font-family: 'Lato', sans-serif;
   position: relative;
   padding-top: 20px;
   z-index: -10000;
 }
+
 .icon {
   position: absolute;
   height: 60px;
@@ -52,51 +54,62 @@ p {
   top: 7px;
   z-index: 10001;
 }
+
 .c {
   position: absolute;
   height: 65px;
-  right:  10px;
+  right: 10px;
   top: 0px;
 }
+
 ul {
   position: relative;
-    list-style-type: none;
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
+  list-style-type: none;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
 }
+
 li {
   color: black;
   display: inline-block;
   font-size: 25px;
 }
+
 .food {
   padding-right: 40px;
   padding-left: 40px;
 }
+
 .button-collapse {
   color: #26a69a;
 }
+
 a {
   color: inherit;
 }
+
 a:hover {
-  color: #e57373; 
+  color: #e57373;
 }
+
 .active {
   color: #e57373;
 }
+
 .parallax-container {
   /*height: 100vh;*/
   line-height: 0;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, .9);
   /*z-index: -10000;*/
 }
+
 .mainbanner {
-    height: 100vh;
+  height: 100vh;
 }
-@media only screen and (max-width : 992px) {
+
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -106,7 +119,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
@@ -115,9 +128,11 @@ a:hover {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
+
 
 /*img.cardpic {
     padding: 1rem 0rem 1rem 0rem;
@@ -128,17 +143,17 @@ a:hover {
 }*/
 
 header {
-    background: white;
-    height: 75px;
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
-    z-index: 20000;
+  background: white;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 20000;
 }
 
 .nav-up {
-    top: -75px;
+  top: -75px;
 }
 
 .leftsmallwindowicon {
@@ -147,55 +162,87 @@ header {
   left: 10px;
   top: 7px;
 }
+
 .rightsmallwindowicon {
   display: none;
   height: 60px;
-  right:  10px;
+  right: 10px;
   top: 7px;
 }
 
-@media all and (min-width: 0px) and (max-width: 600px) {
-  .food {display: none;}
-  .performances {display: none;}
-  .c{display: none;}
-  .icon{display:none;}
-  .leftsmallwindowicon{display: inline-block; position: absolute; z-index: 10000;}
-  .rightsmallwindowicon{display:inline-block; position: absolute; z-index: 10000;}
-
+.piccaption {
+  font-size: 15px;
+  color: grey;
+  line-height: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
+
+@media all and (min-width: 0px) and (max-width: 600px) {
+  .food {
+    display: none;
+  }
+  .performances {
+    display: none;
+  }
+  .c {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+  .leftsmallwindowicon {
+    display: inline-block;
+    position: absolute;
+    z-index: 10000;
+  }
+  .rightsmallwindowicon {
+    display: inline-block;
+    position: absolute;
+    z-index: 10000;
+  }
+  .piccaption {
+    font-size: 8px;
+    line-height: 8px;
+  }
+}
+
 .firstpic {
   height: 100vh;
 }
+
 .headlines {
-    font-family: 'Arial', sans-serif;
-    font-size: 5vw;
-    font-weight: bold;
-    font-style: italic;
-    text-shadow: 0.5vh 0px 0px rgba(255, 172, 237, 0.8);
+  font-family: 'Arial', sans-serif;
+  font-size: 5vw;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 0.5vh 0px 0px rgba(255, 172, 237, 0.8);
   position: absolute;
   bottom: 5vh;
   z-index: 10000;
 }
 
 .headline2 {
-   font-family: 'Arial', sans-serif;
-    font-size: 2.8vw;
-    font-weight: bold;
-    font-style: italic;
-    text-shadow: 0.5vh 0px 0px rgba(255, 172, 237, 0.8);
+  font-family: 'Arial', sans-serif;
+  font-size: 2.8vw;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 0.5vh 0px 0px rgba(255, 172, 237, 0.8);
   position: absolute;
   bottom: 5vh;
   z-index: 10000;
 }
 
 .cardartist {
-    float: right;
-padding: 0rem 1rem 1rem 1rem;
+  float: right;
+  padding: 0rem 1rem 1rem 1rem;
 }
 
 p.cardcaption {
-    padding: 0rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 1rem 1rem;
 }
+
 
 /*img.cardpic {
     text-align: center;
@@ -206,11 +253,15 @@ p.cardcaption {
     margin: 0 auto;
         box-shadow: 5px 5px 5px #888888;
 }*/
+
 .story1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 20px;
 }
+
+
 /*scrolling*/
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -230,12 +281,13 @@ section {
   /*background: white;*/
   position: relative;
   padding: 20px;
-  padding-right:40px;
+  padding-right: 40px;
   /*padding-left: 20px;*/
   margin-left: 3%;
   margin-bottom: 4%;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
+
 [aos="fade"] {
   opacity: 1;
   transition-property: opacity;
@@ -250,8 +302,9 @@ section {
   padding: 20px;
   margin-right: 4%;
   margin-bottom: 4%;
-      animation: 1s ease-out 0s 1 slideInFromRight;
+  animation: 1s ease-out 0s 1 slideInFromRight;
 }
+
 .module-right {
   max-width: 40%;
   min-height: 200px;
@@ -261,8 +314,9 @@ section {
   padding: 20px;
   margin-right: 4%;
   margin-bottom: 4%;
-      animation: 1s ease-out 0s 1 slideInFromRight;
+  animation: 1s ease-out 0s 1 slideInFromRight;
 }
+
 .module-left {
   max-width: 40%;
   /*min-height: 200px;*/
@@ -270,11 +324,11 @@ section {
   /*background: white;*/
   position: relative;
   padding: 20px;
-  padding-right:40px;
+  padding-right: 40px;
   /*padding-left: 20px;*/
   margin-left: 3%;
   margin-bottom: 4%;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 @keyframes slideInFromLeft {
@@ -290,11 +344,11 @@ section {
 
 @keyframes slideInFromRight {
   0% {
-        opacity: 0;
+    opacity: 0;
     transform: translateX(25%);
   }
   100% {
-        opacity: 1;
+    opacity: 1;
     transform: translateX(0);
   }
 }
