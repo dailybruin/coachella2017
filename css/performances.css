@@ -143,9 +143,8 @@ header {
   width: 85%;
 }
 .rule {
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-bottom: 50px;
+  width: 60%;
+  margin: auto;
   border: none;
   height: 5px;
   color: #ef9a9a;
