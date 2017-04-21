@@ -2,8 +2,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: rgb(65,65,65);
 }
-
-
 p {
   line-height: 2rem;
 }
@@ -54,7 +52,7 @@ a {
   color: inherit;
 }
 a:hover {
-  color: #e57373; 
+  color: #e57373;
 }
 .active {
   color: #e57373;
@@ -125,15 +123,58 @@ header {
   right:  10px;
   top: 7px;
 }
-
 @media all and (min-width: 0px) and (max-width: 600px) {
   .experiences {display: none;}
-  .performances {display: none;}
+  .food {display: none;}
   .c{display: none;}
   .icon{display:none;}
   .leftsmallwindowicon{display: inline-block; position: absolute; z-index: 10000;}
   .rightsmallwindowicon{display:inline-block; position: absolute; z-index: 10000;}
-
+}
+.blockquote{
+  font-family: raleway;
+  font-weight: 400;
+  color: grey;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+}
+.container{
+  width: 85%;
+}
+.rule {
+  width: 60%;
+  margin: auto;
+  border: none;
+  height: 5px;
+  color: #ef9a9a;
+  background-color: #ef9a9a;
+}
+.module-right {
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+.module-left {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 footer {
   padding-bottom: 5px;

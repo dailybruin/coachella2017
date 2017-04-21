@@ -152,11 +152,10 @@ header {
   background-color: #ef9a9a;
 }
 .module-right {
-  /*animation: 1s ease-out 0s 1 slideInFromRight;*/
+  animation: 1s ease-out 0s 1 slideInFromRight;
 }
 .module-left {
-  opacity: 1;
-  /*animation: 1s ease-out 0s 1 slideInFromLeft;*/
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 @keyframes slideInFromLeft {
   0% {
@@ -178,6 +177,6 @@ header {
     transform: translateX(0);
   }
 }
-footer {
+footer{
   padding-bottom: 5px;
 }
