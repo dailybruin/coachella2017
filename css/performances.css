@@ -2,8 +2,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: rgb(65,65,65);
 }
-
-
 p {
   line-height: 2rem;
 }
@@ -54,7 +52,7 @@ a {
   color: inherit;
 }
 a:hover {
-  color: #e57373; 
+  color: #e57373;
 }
 .active {
   color: #e57373;
@@ -133,5 +131,15 @@ header {
   .icon{display:none;}
   .leftsmallwindowicon{display: inline-block; position: absolute; z-index: 10000;}
   .rightsmallwindowicon{display:inline-block; position: absolute; z-index: 10000;}
-
+}
+.blockquote{
+  font-family: raleway;
+  font-weight: 400;
+  color: grey;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+}
+.container{
+  width: 85%;
 }
