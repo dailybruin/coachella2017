@@ -42,37 +42,39 @@
     <script id="template" type="text/x-handlebars-template">
       <div class="card z-depth-5">
         <div class="card-image">
-          <img src={{cellsArray.[0]}}/>
+          <img src={{cellsArray.[1]}}/>
         </div>
       </div>
+      <h2 class="center">{{cellsArray.[0]}}</h2>
+      <hr />
+      <p class="blockquote">
+        {{cellsArray.[2]}}
+      </p>
+      <br />
+      <br />
     </script>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col s12 l6">
-        <br />
-        <br />
-        <h2>Kendrick Lamar</h2>
-        <hr />
-        <p class="blockquote">
-          Kendrick Lamar Duckworth (born June 17, 1987) is an American rapper and
-          songwriter from Compton. He first gained major attention after the release
-          of his 2010 mixtape O(verly) D(edicated). In 2015, he dropped To Pimp a Butterfly to
-          widespread acclaim. The album debuted at No. 1 on the Billboard 200 Albums
-          Chart. The following year, untitled unmastered. dropped by surprise. In April
-          of 2017, Kendrick dropped DAMN. on Good Friday.
-        </p>
-      </div>
-      <div class="col s12 l6">
-        <div class="card z-depth-5">
-          <div class="card-image">
-            <img src="images/test.jpg">
+  <!-- <div class="container" id="article">
+    <script id="template" type="text/x-handlebars-template">
+      <div class="row">
+        <div class="row s12 l6">
+          <h2>{{cellsArray.[0]}}</h2>
+          <hr />
+          <p class="blockquote">
+            {{cellsArray.[2]}}
+          </p>
+        </div>
+        <div class="row s12 l6">
+          <div class="card z-depth-5">
+            <div class="card-image">
+              <img src="{{cellsArray.[1]}}"/>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </script>
+  </div> -->
 
 </body>
 <!-- SCRIPTS -->
