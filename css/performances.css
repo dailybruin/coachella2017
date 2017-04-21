@@ -123,7 +123,6 @@ header {
   right:  10px;
   top: 7px;
 }
-
 @media all and (min-width: 0px) and (max-width: 600px) {
   .experiences {display: none;}
   .food {display: none;}
@@ -151,4 +150,31 @@ header {
   height: 5px;
   color: #ef9a9a;
   background-color: #ef9a9a;
+}
+.module-right {
+  /*animation: 1s ease-out 0s 1 slideInFromRight;*/
+}
+.module-left {
+  opacity: 1;
+  /*animation: 1s ease-out 0s 1 slideInFromLeft;*/
+}
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
