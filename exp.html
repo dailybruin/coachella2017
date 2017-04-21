@@ -10,10 +10,11 @@
 
   <!-- TODO: OG TAGS -->
 
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:300|Lato:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:300|Lato:300|Cormorant+Garamond' rel='stylesheet' type='text/css'>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
   <link rel="stylesheet" href="css/exp.css">
 </head>
 
@@ -35,20 +36,26 @@
   <!-- HANDLEBARS TEMPLATES -->
   <script id="card-template" type="text/x-handlebars-template">
     {{#each carddata}}
-            <section>
-        <div class="module-right">
-          <div class="photocard">
-            <p class="cardartist"><h2>{{title}}</h2></p>
-            <hr />
-            <div style="clear: both;"></div>
-          {{{formatcaptiontext caption}}}
+    <section>
+      <div class="module-right-temp">
+        <div class="photocard">
+          <p class="cardartist">
+            <h1>{{title}}</h1>
+          </p>
+          <hr />
+          <div style="clear: both;"></div>
+          <div class="blockquote">{{{formatcaptiontext caption}}}</div>
         </div>
+      </div>
+      <div class="module-left-temp">
+        <div class="card z-depth-5">
+          <div class="card-image">
+            <img class="cardpic" src="{{photo-url}}" />
+          </div>
         </div>
-        <div class ="module-left">
-          <img class="cardpic" src="{{photo-url}}"/>
-        </div>
-      </section>
-    {{/each}}
+      </div>
+    </section>
+    <hr class="rule" /> {{/each}}
   </script>
 
   <div id="index-banner" class="parallax-container mainbanner">
@@ -59,20 +66,180 @@
     <div class="parallax"><img src="images/coachellasmall.jpg" alt="header image"></div>
     <div class="headlines"><span>BRUINS @ COACHELLA</span></div>
   </div>
-  <div class="section white mainstory">
+      <div class="section white mainstory">
     <div class="row container">
       <div class="content-main"></div>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/coachellasmall.jpg"></div>
+    <div class="headline2"><span>Students weigh in on significance of Coachella lineup, fashion choices</span></div>
+  </div>
+  <div class="section white story1">
+    <div class="row container">
+      <p style="font-family: Helvetica, sans-serif; font-size: 12px; padding:none;"><strong>BY: <a href="https://http://dailybruin.com/author/lindsay-weinberg/" >LINDSAY WEINBERG</a></strong></p>
+      </p>
+      <p>Natasha Keces won’t be watching Raury perform live at Coachella on Friday evening. She’ll be taking a science midterm.</p>
+      <div class="module-right" data-aos="fade-left">
+        <div class="card z-depth-5">
+          <div class="card-image">
+            <img class="cardpic" src="http://dailybruin.com/images/2017/04/web.ae_.coachella.feat_.PicB_.MB_-300x200.jpg" />
+            <p style="font-size:15px; color:grey; line-height:16px; padding-left: 10px; padding-right:10px; padding-bottom:10px;">First-year psychobiology student Natasha Keces will drive to Indio, Calif. on Friday evening after her Life Sciences
+              2 midterm. The Kendrick Lamar fan is going to the festival with her sister and a friend. (Miriam Bribiesca/Photo
+              editor)
+            </p>
+          </div>
+        </div>
+      </div>
+      <p>Keces bought her three-day pass to the Coachella Valley Music and Arts Festival before she knew her spring class schedule.
+        While the unfortunate timing of her Life Sciences 2: “Cells, Tissues and Organs” midterm threatened to hamper her
+        Coachella trip, Keces decided not to sell her ticket.</p>
+      <p>Her mom is planning to drive her to Indio, California on Friday night to meet up with the rest of her friends – just
+        in time for Radiohead’s headlining performance in the desert.</p>
+      <p>Many UCLA students consider the trip to the Empire Polo Club worth the heat, the dust, the price and the time to partake
+        in Southern California’s trendiest music festival.</p>
+      <p>For Keces, a first-year psychobiology student, this will be her first time attending Coachella. She grew up near Laguna
+        Beach, California, and became interested in rap music during her senior year of high school.</p>
+      <p>Keces went to Outside Lands and Camp Flog Gnaw Carnival, but the lineup for Coachella is what hooked her this year.
+        She’s most looking forward to Kendrick Lamar, though she prefers his previous album “To Pimp a Butterfly” over the
+        recent “DAMN.”</p>
+      <hr class="rule" />
+      <div class="module-left" data-aos="fade-right">
+        <div class="card z-depth-5">
+          <div class="card-image">
+            <img class="cardpic" src="http://dailybruin.com/images/2017/04/web.ae_.coachella.feat_.PicA_.MB_-640x427.jpg" />
+            <p style="font-size:15px; color:grey; line-height:16px; padding-left: 10px; padding-right:10px; padding-bottom:10px;">First-year physiology student Azisa Todd is bringing a tie-dye shirt and dashiki to wear to Lady Gaga and Kendrick
+              Lamar's sets, respectively. While attending Coachella, Todd said they will call out people for appropriating
+              other cultures at the festival. (Miriam Bribiesca/Photo editor)</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <p>This year also marks student Azisa Todd’s first time at Coachella – in fact, their first time at any big music festival.
+        The first-year physiology student is traveling to the valley with friends to see fellow Oakland native Kehlani perform.</p>
+      <p>“She’s from my city, so I gotta represent her and support her,” Todd said.</p>
+      <p>Though Todd has attended several concerts during the school year, Coachella is the peak experience. As a music lover,
+        Todd is excited to bond with fans of various music genres and styles.</p>
+      <div class="module-right" data-aos="fade-left">
+        <div class="card z-depth-5">
+          <div class="card-image">
+            <img class="cardpic" src="http://dailybruin.com/images/2017/04/web.ae_.coachella.feat_.PicD_.MB_-300x200.jpg" />
+            <p style="font-size:15px; color:grey; line-height:16px; padding-left: 10px; padding-right:10px; padding-bottom:10px;">This year will be Azisa Todd’s first time at the Coachella Music Valley and Arts Festival. Todd is most looking
+              forward to hearing Kehlani, a singer from Todd’s hometown of Oakland, Calif. (Miriam Bribiesca/Photo editor)</p>
+
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <p style="font-weight: bold; font-size:30px; text-align:center;" data-aos="fade-right"><em>“She’s from my city, so I gotta represent her and support her.”</em></p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <hr class="rule" />
+      <p>However, the 2017 lineup didn’t entice all Bruins. One student posted about selling her Coachella ticket on the Free
+        & For Sale Facebook page after Lady Gaga replaced Beyoncé as Saturday’s headliner.</p>
+
+      <p>UCLA alumna Jasmin Ayala said she thought Lady Gaga would be the only suitable replacement for Beyoncé. Ayala is looking
+        forward to Lady Gaga’s old hits like “Paparazzi,” “Just Dance” and “Bad Romance” – songs that define what she calls
+        the classic Lady Gaga.</p>
+
+      <p>Although Coachella is a music festival, Ayala said the music and laid-back culture go hand in hand. She considers walking
+        around the grassy grounds with bare feet as part of the culture.</p>
+
+      <p>Last year, Ayala’s friend dragged her to Coachella, and this year she is bringing her boyfriend, a newcomer to the
+        festival.</p>
+
+      <p>“It’s going to be pretty fun having him witness everything for the first time, just like I did last year,” Ayala said.</p>
+
+      <p>The positive vibe also made Jacqueline Perez want to return to Coachella.</p>
+
+      <p>“The lineup made me want to go last year – it was my first music festival,” said the first-year undeclared student.
+        “The atmosphere made me want to go again this year.”</p>
+
+      <p>Perez went with her brother and mom in 2016, and this year her brother bought her a ticket to attend Weekend 1 with
+        him and his friends. Everyone is concerned with having a good time rather than worrying about work or school and
+        it has a carefree atmosphere, she said.</p>
+
+      <hr class="rule" />
+      <p>Some Bruins contribute to the atmosphere by dressing in festival attire. Keces is bringing a black floppy hat, a paisley
+        top, a denim romper and a white flowing embroidered dress.</p>
+
+      <p>Ayala started planning her outfits two months in advance and just finished her wardrobe by buying bottoms that match
+        her red crochet top for $1 at H&M. One of her other boho outfits is a pink, off-the-shoulder body suit.</p>
+
+      <p>But students said the intense desert heat prohibits or influences many of their fashion choices.</p>
+
+      <p>Last year, Ayala wore bikinis instead of the outfits she had planned out because of the heat. She recommends airy shorts
+        to keep cool when temperatures push 100 degrees. Perez also dressed more for comfort and practicality due to the
+        weather, she said.</p>
+
+      <p>Todd, however, is using clothing to make a statement.</p>
+
+      <p>Todd noticed that cultural appropriation is a large problem at Coachella, since some people wear bindis and headdresses
+        that belong to cultures the wearer does not identify with nor fully understand.</p>
+
+      <p>Dashikis are sometimes worn as part of the Coachella fashion, but Todd said the colorful garments have strong ties
+        to African and Black culture. It’s one way for individuals to stay connected to their cultural roots, yet Todd sees
+        retailers like H&M selling similar designs on their clothing.</p>
+
+      <p>“I feel like I’m going to see that there and I’m not going to be happy about that,” Todd said. “I’m not down and honestly
+        I have no problem calling people out for it.”</p>
+
+      <p>Therefore in addition to bringing a sunflower dress and red velvet bell bottoms, Todd is packing a pink dashiki to
+        wear during Lamar’s set.</p>
+
+      <p>For Lady Gaga’s set, Todd is bringing a tie-dye T-shirt that reads, “Unlearn white skin being the default.” Todd said
+        although Lady Gaga promotes acceptance of queer people, most of the pop singer’s messages focus on cisgendered, white,
+        gay males.</p>
+
+      <p>Thus Todd’s shirt will comment on an inability to relate as much to Lady Gaga as other artists like Kehlani. Even Todd’s
+        red backpack, adorned with buttons like “UCLA LGBT Studies,” “Black History Month” and “Bernie,” conveys a passion
+        for social justice.</p>
+
+      <p>“There’s a little bit of myself in every piece,” they said.</p>
+
+      <p>Todd hopes to help festival attendees learn about why cultural appropriation can be offensive to Native American or
+        Black communities, for example.</p>
+
+      <p>“Some people don’t have the privilege to take it off after one day,” Todd said.</p>
+
+      <p>Todd believes Coachella can be a teachable moment by asking attendees if they know the cultural significance behind
+        the jewelry and clothing they’re wearing. You have to appreciate the entire culture, not just the cool parts you
+        can wear, Todd said.</p>
+
+      <p>Perez said she’s evolved as a person and realized she wanted to focus on the indie alternative beats and rhythms of
+        Coachella more than the fashion.</p>
+
+      <p>“I’m definitely more into the music – that’s what it’s supposed to be about,” Perez said.</p>
+
+      <p>For Ayala, the festival is really about the experience of going with people you are close with and joining other music
+        lovers in the desert.</p>
+
+      <p>Keces said paying for memorable experiences like Coachella is worth the price tag. The festival has such a variety
+        of performances, ranging from rhythm and blues to hip-hop to rap to electronic, and she appreciates the diverse group
+        of attendees and musicians she will see.</p>
+
+      <p>“You have something in common with everybody there that brought you together,” Perez said.</p>
     </div>
   </div>
 </body>
 <!-- SCRIPTS -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 <script src="js/init.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/exp.js"></script>
 <script src="js/scroll.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>
