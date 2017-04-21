@@ -203,8 +203,8 @@ header {
     z-index: 10000;
   }
   .piccaption {
-    font-size: 8px;
-    line-height: 9px;
+    font-size: 12px;
+    line-height: 13px;
   }
 }
 
@@ -361,4 +361,8 @@ section {
   height: 5px;
   color: #ef9a9a;
   background-color: #ef9a9a;
+}
+
+footer {
+  padding-bottom: 5px;
 }

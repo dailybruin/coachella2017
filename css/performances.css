@@ -178,3 +178,6 @@ header {
     transform: translateX(0);
   }
 }
+footer {
+  padding-bottom: 5px;
+}
