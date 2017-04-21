@@ -3,7 +3,7 @@ $( document ).ready(function() {
   var articleTemplate = Handlebars.compile($('#template').html());
   $('#article').sheetrock({
     url: mySpreadsheet,
-    query: "select B",
+    query: "select A,B,C",
     rowTemplate: articleTemplate
   });
 });
