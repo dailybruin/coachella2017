@@ -1,5 +1,4 @@
-var photosheetkey = "1wxIlU9pjKDcAfZrX4XmzAfCBA1cpWP1TrmoUGpvWa-c";
-var recapsheetkey = "1ffCXCveuwLrG7jL20bTsATxGIxSWDvjTloNQAn_3H-M";
+var photosheetkey = "1W6mZTayIG0hKyfFa-RcOcY05VX2fmrM8gijPVJdm34U";
 var photocard_template = $("#card-template").html();
 var photocard_compiled = Handlebars.compile(photocard_template);
 
