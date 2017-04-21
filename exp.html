@@ -21,33 +21,44 @@
   <header class="nav-down">
     <div class="nav-content">
       <a href="https://www.dailybruin.com/"><img src="images/dbsmall.png" alt="dblogo" class="icon" /></a>
-      <a href="performances.html"><img class="rightsmallwindowicon" src="images/perform.png"/></a>
-        <ul>
-          <li class="experiences"><a class="active" href="exp.html">EXPERIENCES</a></li>
-          <li class="food"><a href="food.html">FOOD</a></li>
-          <li class="performances"><a href="performances.html">PERFORMANCES</a></li>
-        </ul>
+      <a href="performances.html"><img class="rightsmallwindowicon" src="images/perform.png" /></a>
+      <ul>
+        <li class="experiences"><a class="active" href="exp.html">EXPERIENCES</a></li>
+        <li class="food"><a href="food.html">FOOD</a></li>
+        <li class="performances"><a href="performances.html">PERFORMANCES</a></li>
+      </ul>
       <a href="https://www.coachella.com/"><img src="images/c.png" alt="coachella logo" class="c" /></a>
-      <a href="food.html"><img class= "leftsmallwindowicon" src="images/food.png"/></a>
+      <a href="food.html"><img class="leftsmallwindowicon" src="images/food.png" /></a>
     </div>
   </header>
 
   <!-- HANDLEBARS TEMPLATES -->
-	<script id="card-template" type="text/x-handlebars-template">
-		{{#each carddata}}
-			<div class="photocard">
-				<div class="card-top">
-					<p class="timestamp">{{time}}</p>
-					<p class="cardartist">{{artist}}</p>
-					<div style="clear: both;"></div>
-				</div>
-				<img class="cardpic" src="{{photo-url}}"/>
-				{{{formatcaptiontext caption}}}
-			</div>
-		{{/each}}
-	</script>
-  
-  <div id="index-banner" class="parallax-container">
+  <script id="card-template" type="text/x-handlebars-template">
+    {{#each carddata}}
+    <div class="section white">
+      <div class="row container">
+        <div class="photocard">
+          <div class="card-top">
+            <p class="timestamp">{{time}}</p>
+            <p class="cardartist">{{artist}}</p>
+            <div style="clear: both;"></div>
+          </div>
+          <img class="cardpic" src="{{photo-url}}" /> 
+          {{{formatcaptiontext caption}}}
+        </div>
+      </div>
+    </div>
+      <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+      </div>
+    </div>
+    <div class="parallax"><img src="images/coachellasmall.jpg" alt="header image"></div>
+  </div>
+    {{/each}}
+  </script>
+
+  <div id="index-banner" class="parallax-container mainbanner">
     <div class="section no-pad-bot">
       <div class="container">
       </div>
@@ -55,20 +66,19 @@
     <div class="parallax"><img src="images/coachellasmall.jpg" alt="header image"></div>
     <div class="headlines"><span>BRUINS @ COACHELLA</span></div>
   </div>
-  <div class="section white">
+  <div class="section white mainstory">
     <div class="row container">
-      <p class="grey-text content-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tellus neque, 
-        sed volutpat lorem ultrices ac. Vivamus fringilla sollicitudin imperdiet. Nunc ac eros quis felis feugiat tempus 
-        sit amet et ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-        Cras fringilla lacus odio, id blandit lorem placerat id. Vivamus ut sapien tortor. Ut malesuada 
-        risus a euismod egestas. Vivamus ipsum quam, accumsan vel vestibulum non, tincidunt non ante. Phasellus gravida 
-        porttitor velit, eget molestie massa facilisis ac. Donec ornare ullamcorper arcu eu mattis. Aliquam molestie lorem 
-        vitae magna suscipit, quis malesuada diam placerat. Mauris lectus sapien, imperdiet eu sagittis nec, maximus eget mi. 
-        Fusce feugiat molestie odio, id tincidunt neque pharetra dictum.
-        </p>
+      <div class="content-main"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tellus neque, sed volutpat lorem ultrices
+        ac. Vivamus fringilla sollicitudin imperdiet. Nunc ac eros quis felis feugiat tempus sit amet et ligula. Orci varius
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras fringilla lacus odio, id blandit
+        lorem placerat id. Vivamus ut sapien tortor. Ut malesuada risus a euismod egestas. Vivamus ipsum quam, accumsan vel
+        vestibulum non, tincidunt non ante. Phasellus gravida porttitor velit, eget molestie massa facilisis ac. Donec ornare
+        ullamcorper arcu eu mattis. Aliquam molestie lorem vitae magna suscipit, quis malesuada diam placerat. Mauris lectus
+        sapien, imperdiet eu sagittis nec, maximus eget mi. Fusce feugiat molestie odio, id tincidunt neque pharetra dictum.</p>
     </div>
   </div>
-    <div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
       </div>
@@ -77,27 +87,26 @@
   </div>
   <div class="section white">
     <div class="row container">
-      <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tellus neque, 
-        sed volutpat lorem ultrices ac. Vivamus fringilla sollicitudin imperdiet. Nunc ac eros quis felis feugiat tempus 
-        sit amet et ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-        Cras fringilla lacus odio, id blandit lorem placerat id. Vivamus ut sapien tortor. Ut malesuada 
-        risus a euismod egestas. Vivamus ipsum quam, accumsan vel vestibulum non, tincidunt non ante. Phasellus gravida 
-        porttitor velit, eget molestie massa facilisis ac. Donec ornare ullamcorper arcu eu mattis. Aliquam molestie lorem 
-        vitae magna suscipit, quis malesuada diam placerat. Mauris lectus sapien, imperdiet eu sagittis nec, maximus eget mi. 
-        Fusce feugiat molestie odio, id tincidunt neque pharetra dictum.
-        </p>
+      <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tellus neque, sed volutpat lorem ultrices
+        ac. Vivamus fringilla sollicitudin imperdiet. Nunc ac eros quis felis feugiat tempus sit amet et ligula. Orci varius
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras fringilla lacus odio, id blandit
+        lorem placerat id. Vivamus ut sapien tortor. Ut malesuada risus a euismod egestas. Vivamus ipsum quam, accumsan vel
+        vestibulum non, tincidunt non ante. Phasellus gravida porttitor velit, eget molestie massa facilisis ac. Donec ornare
+        ullamcorper arcu eu mattis. Aliquam molestie lorem vitae magna suscipit, quis malesuada diam placerat. Mauris lectus
+        sapien, imperdiet eu sagittis nec, maximus eget mi. Fusce feugiat molestie odio, id tincidunt neque pharetra dictum.
+      </p>
     </div>
   </div>
 
 </body>
 <!-- SCRIPTS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
-  <script src="js/exp.js"></script>
-  <script src="js/init.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+<script src="js/exp.js"></script>
+<script src="js/init.js"></script>
 <script src="js/nav.js"></script>
 
 </html>

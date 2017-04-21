@@ -16,7 +16,7 @@ function init() {
 	$.getJSON(photosheeturl, function(data) {
 		data = clean_google_sheet_json(data);
 		data = data.reverse();
-		$(".content-main").append(photocard_compiled({carddata: data}));
+		$(".mainstory").append(photocard_compiled({carddata: data}));
 		
 	});	
 function clean_google_sheet_json(data){
