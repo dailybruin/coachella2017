@@ -119,12 +119,13 @@ a:hover {
   font-size: inherit;
 }
 
-img.cardpic {
+/*img.cardpic {
     padding: 1rem 0rem 1rem 0rem;
     max-height: 85vh;
     display: block;
     margin: 0 auto;
-}
+    box-shadow: 5px 5px 5px #888888;
+}*/
 
 header {
     background: white;
@@ -133,7 +134,7 @@ header {
     top: 0;
     transition: top 0.2s ease-in-out;
     width: 100%;
-    z-index: 200;
+    z-index: 20000;
 }
 
 .nav-up {
@@ -176,7 +177,7 @@ header {
   z-index: 10000;
 }
 /*cards*/
-.photocard {
+/*.photocard {
     margin: auto;
     height: auto;
     max-width: 90vw;
@@ -205,11 +206,76 @@ p.cardartist {
 p.cardcaption {
     padding: 0rem 1rem 1rem 1rem;
 }
-
+*/
 img.cardpic {
     text-align: center;
-    padding: 1rem 0rem 1rem 0rem;
-    height: 85vh;
+
+    height: auto;
+    max-width: 50%;
     display: block;
     margin: 0 auto;
+        box-shadow: 5px 5px 5px #888888;
+}
+
+/*scrolling*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 0 auto;
+  /*padding: 20px;*/
+  overflow: hidden;
+}
+
+.module-left {
+  width: 40%;
+  /*min-height: 200px;*/
+  float: left;
+  background: white;
+  position: relative;
+  /*padding: 20px;*/
+  padding-left: 20px;
+  margin-left: 4%;
+  margin-bottom: 4%;
+  /*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);*/
+}
+
+.module-right {
+  width: 40%;
+  min-height: 200px;
+  float: right;
+  background: white;
+  position: relative;
+  /*padding: 20px;*/
+  padding-right: 20px;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.module:nth-child(even) {
+  margin-right: 0;
+}
+
+.come-in-left {
+  transform: translateX(150px);
+  animation: come-in 1.5s ease forwards;
+}
+
+.come-in-left:nth-child(odd) {
+  animation-duration: 1.5s;
+}
+
+.already-visible {
+  transform: translateX(0);
+  animation: none;
+}
+
+@keyframes come-in-left {
+  to {
+    transform: translateX(0);
+  }
 }
