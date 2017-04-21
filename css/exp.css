@@ -186,13 +186,6 @@ header {
     margin-top: 3rem;
 }*/
 
-.card-top p {
-    padding: 1rem 1rem 0rem 1rem;
-    margin-bottom: 0px;
-    font-size: 1.4rem;
-    
-}
-
 p.timestamp {
     font-weight: 300;
     float: left;
@@ -202,6 +195,7 @@ p.cardartist {
     float: right;
     font-weight: 700;
     text-decoration: underline;
+    padding: none;
 }
 
 p.cardcaption {
