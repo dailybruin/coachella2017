@@ -1,6 +1,6 @@
 body{
     background-image: url(http://graphics.dailybruin.com/coachella-2016/icon/background.jpg);
-    background-size: cover;
+    background-size: cover no-repeat;
 }
 
 .fullscreen-bg {
