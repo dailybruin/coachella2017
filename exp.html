@@ -10,7 +10,7 @@
 
   <!-- TODO: OG TAGS -->
 
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:300|Lato:300|Cormorant+Garamond' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:300|Lato:300|Cormorant+Garamond|Raleway' rel='stylesheet' type='text/css'>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
@@ -37,22 +37,21 @@
   <script id="card-template" type="text/x-handlebars-template">
     {{#each carddata}}
     <section>
-      <div class="module-right-temp">
         <div class="photocard">
           <p class="cardartist">
-            {{title}}
+            <h3><center>{{title}}</center></h3>
+            <br />
           </p>
           <div style="clear: both;"></div>
           <div>{{{formatcaptiontext caption}}}</div>
         </div>
-      </div>
-      <div class="module-left-temp">
+      <!--<div class="module-left-temp">
         <div class="card z-depth-5">
           <div class="card-image">
             <img class="cardpic" src="{{photo-url}}" />
           </div>
         </div>
-      </div>
+      </div>-->
     </section>
     <hr class="rule" /> {{/each}}
   </script>
