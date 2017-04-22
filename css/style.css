@@ -26,8 +26,8 @@ body{
        -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
-        -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
-filter: blur(10px);
+        /*-webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+/*filter: blur(10px);*/*/
 z-index: -100;
 }
 
