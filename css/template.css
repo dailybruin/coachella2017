@@ -10,7 +10,7 @@ p {
   z-index: 100000;
 }
 .page {
-  min-height: calc(100vh-80px);
+  min-height: 90vh;
 }
 .nav-down {
   z-index: 10;
@@ -186,8 +186,8 @@ header {
   }
 }
 footer{
-  height: 80px;
-  line-height: 80px;
+  height: 10vh;
+  line-height: 10vh;
   bottom: 0;
   background-color: #efefef;
 }
