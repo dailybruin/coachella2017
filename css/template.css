@@ -3,7 +3,13 @@ body {
   color: rgb(65,65,65);
 }
 p {
-  line-height: 2rem;
+  /*line-height: 2rem;*/
+  font-family: raleway;
+  font-weight: 400;
+  color: grey;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
 }
 .content {
   font-size: 50px;
