@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: black;
 }
 
@@ -239,7 +239,7 @@ header {
 }
 
 .cardartist {
-  float: right;
+  /*float: right;*/
   padding: 0rem 1rem 1rem 1rem;
 }
 
@@ -375,6 +375,7 @@ footer{
 footer a {
   color: orange;
 }
+
 .story1banner {
   height: 50vh;
 }
