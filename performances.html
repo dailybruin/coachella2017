@@ -15,6 +15,7 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
   <link rel="stylesheet" href="css/performances.css">
+  <link rel="stylesheet" href="css/template.css">
 </head>
 
 <body>
@@ -58,8 +59,8 @@
     <script id="template" type="text/x-handlebars-template">
       <div class="row">
         <div class="col s12 l5 module-left">
-          <h2>{{cellsArray.[0]}}</h2>
-          <hr />
+          <h2><center>{{cellsArray.[0]}}</center></h2>
+          <hr class="rule"/>
           <p class="blockquote">
             {{cellsArray.[2]}}
           </p>
@@ -75,11 +76,8 @@
     </script>
   </div>
 
-  <div class="module-left">
-    test
-  </div>
-
 </body>
+<br />
 <!-- SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
@@ -90,6 +88,9 @@
   <script src="js/init.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/performances.js"></script>
-<footer><center>Website by <a href="https://github.com/Austineel">Austin Lee</a>, <a href="https://github.com/zeehang">Mike Zhang</a>, and <a href="https://github.com/Bensun">Benson Han</a></center></footer>
+
+<footer>
+  <center>Website by <a href="https://github.com/Austineel">Austin Lee</a>, <a href="https://github.com/zeehang">Mike Zhang</a>, and <a href="https://github.com/Bensun">Benson Han</a></center>
+</footer>
 
 </html>

@@ -9,7 +9,7 @@ $( document ).ready(function() {
   $(window).on("load",function() {
     $(window).scroll(function() {
       var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-      $(".module-left").each(function() {
+      $(".module").each(function() {
         /* Check the location of each desired element */
         var objectBottom = $(this).offset().top + $(this).outerHeight();
         /* If the element is completely within bounds of the window, fade it in */
