@@ -150,32 +150,6 @@ header {
   color: #ef9a9a;
   background-color: #ef9a9a;
 }
-.module-right {
-  animation: 1s ease-out 0s 1 slideInFromRight;
-}
-.module-left {
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-}
-@keyframes slideInFromLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-25%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes slideInFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(25%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 footer{
   padding: 2rem;
   bottom: 0;
