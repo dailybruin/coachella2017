@@ -9,6 +9,9 @@ p {
   font-size: 50px;
   z-index: 100000;
 }
+.page {
+  min-height: 85vh;
+}
 .nav-down {
   z-index: 10;
   -webkit-box-shadow: 0px 0px 8px 2px #DCDCDC;
@@ -183,7 +186,9 @@ header {
   }
 }
 footer{
-  padding: 2rem;
+  position: bottom;
+  margin: auto;
+  padding: 5vh;
   bottom: 0;
   background-color: #efefef;
 }
