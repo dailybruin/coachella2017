@@ -40,7 +40,6 @@ p {
   z-index: 100000;
 }
 .nav-down {
-  z-index: 10;
   -webkit-box-shadow: 0px 0px 8px 2px #DCDCDC;
        -moz-box-shadow: 0px 0px 8px 2px #DCDCDC;
             box-shadow: 0px 0px 8px 2px #DCDCDC;
