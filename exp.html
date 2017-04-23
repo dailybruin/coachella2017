@@ -45,24 +45,6 @@
           <div style="clear: both;"></div>
           <div>{{{formatcaptiontext caption}}}</div>
         </div> -->
-        <div class="container" id="article">
-          <script id="template" type="text/x-handlebars-template">
-            <div class="row">
-              <div class="col s12 l5 module-left">
-                <h2><center>{{cellsArray.[0]}}</center></h2>
-                <hr class="rule"/>
-                {{{cellsArray.[2]}}}
-              </div>
-              <div class="col s12 l6 offset-l1 module-right">
-                <div class="card z-depth-5">
-                  <div class="card-image">
-                    <img src="{{cellsArray.[1]}}"/>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </script>
-        </div>
 
       <!--<div class="module-left-temp">
         <div class="card z-depth-5">
@@ -86,7 +68,25 @@
   </div>
       <div class="section white mainstory">
     <div class="row container">
-      <div class="content-main"></div>
+      <br / />
+      <div id="article">
+        <script id="template" type="text/x-handlebars-template">
+          <div class="card z-depth-5">
+            <div class="card-image">
+              <img src="{{cellsArray.[1]}}"/>
+            </div>
+          </div>
+          <h2 class="center">{{cellsArray.[0]}}</h2>
+          <hr />
+          <p class="blockquote">
+            {{{cellsArray.[2]}}}
+          </p>
+          <br />
+          <hr class="rule"/>
+          <br />
+        </script>
+      </div>
+
     </div>
   </div>
   <div class="parallax-container story1banner">
@@ -257,6 +257,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 <script src="js/init.js"></script>
