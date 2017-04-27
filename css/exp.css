@@ -318,9 +318,12 @@ section {
   padding: 20px;
   margin-right: 4%;
   margin-bottom: 4%;
-  animation: 1s ease-out 0s 1 slideInFromRight;
+  /*animation: 1s ease-out 0s 1 slideInFromRight;*/
 }
-
+/*
+.mySlides {
+  color: black;
+}*/
 .module-left {
   max-width: 40%;
   /*min-height: 200px;*/
